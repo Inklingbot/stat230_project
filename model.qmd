@@ -42,3 +42,30 @@ $k=1, \ldots, n_{ij}$ indexes replicates of flights for Paper Type i at Wing Len
 where $n_{ij}$= 6 replicates for all $i$ and $j$.
 
 Where
+
+## Hypotheses for Interaction
+
+-   $H_0:$ no interaction between Paper Type and Wing Length on Drop Time
+-   $H_a:$ interaction between Paper Type and Wing Length on Drop Time
+
+Ho = $\sum$$\sum$$(\alpha\beta)_{ij^2}$ = 0
+
+Ha = $\sum$$\sum$$(\alpha\beta)_{ij^2}$ $≠$ 0
+
+## Hypotheses for Paper Type
+
+-   $H_0:$ no effect of Paper Type on Drop Time (in seconds)
+-   $H_a:$ Paper Type has an effect on Drop Time
+
+Ho = $\sum$$\alpha_i^2$ = 0
+
+Ha = $\sum$$\alpha_i^2$ $≠$ 0
+
+## Hypotheses for Wing Length
+
+-   $H_0:$ no effect of Wing Length on Drop Time
+-   $H_a:$ Wing Length has an effect on Drop Time.
+
+Ho = $\sum$$\beta_j^2$ = 0
+
+Ha = $\sum$$\beta_j^2$ $≠$ 0
