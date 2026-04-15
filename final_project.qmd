@@ -1,0 +1,62 @@
+---
+title: "Final Project"
+Team: Weston Hansen, Gabriel Mendenhall, Calvin Habel, Brayden Kellerby
+format: html
+editor: visual
+---
+
+# Introduction
+
+# Design and Data Collection
+
+We used a BF(2) design for a Randomized Two-Factor experiment to test the efficacy of paper helicopters. The response variable was Drop Time (in seconds), the factors were Paper Type (Printer Paper, Cardstock) and Wing Length (3 inches, 4 inches, 5 inches), and the experimental unit was one paper helicopter flight. 
+
+### The ANOVA Model Used
+
+$$y_{ijk}=\mu + \alpha_i + \beta_j + (\alpha\beta)_{ij}+\epsilon_{ijk}$$ where $y_{ijk}$ is the Drop Time (in seconds) for the ith Paper Type with the jth Wing Length in the kth paper helicopter flight,\
+$\mu$ is the grand mean across all helicopter treatments and flights,\
+$\alpha_i$ is the treatment effect for Paper Type i,\
+$\beta_j$ is the treatment effect for Wing Length j,\
+$(\alpha\beta)_{ij}$ is the interaction effect between Paper Type i and Wing Length j,\
+$\epsilon_{ijk}$ represents the random error in flight k of Paper Type i at Wing Length j,\
+$i=1, 2$ indexes Paper Type (Printer Paper, Carstock) ,\
+$j=1, 2, 3$ indexes Wing Length (3 inches, 4 inches, 5 inches), and\
+$k=1, \ldots, n_{ij}$ indexes replicates of flights for Paper Type i at Wing Length j,\
+where $n_{ij}$= 6 replicates for all $i$ and $j$.
+
+### Hypotheses for Interaction
+
+-   $H_0:$ no interaction between Paper Type and Wing Length on Drop Time
+-   $H_a:$ interaction between Paper Type and Wing Length on Drop Time
+
+Ho = $\sum$$\sum$$(\alpha\beta)_{ij^2}$ = 0
+
+Ha = $\sum$$\sum$$(\alpha\beta)_{ij^2}$ $≠$ 0
+
+### Hypotheses for Paper Type
+
+-   $H_0:$ no effect of Paper Type on Drop Time (in seconds)
+-   $H_a:$ Paper Type has an effect on Drop Time
+
+Ho = $\sum$$\alpha_i^2$ = 0
+
+Ha = $\sum$$\alpha_i^2$ $≠$ 0
+
+### Hypotheses for Wing Length
+
+-   $H_0:$ no effect of Wing Length on Drop Time
+-   $H_a:$ Wing Length has an effect on Drop Time.
+
+Ho = $\sum$$\beta_j^2$ = 0
+
+Ha = $\sum$$\beta_j^2$ $≠$ 0
+
+### Data Collection Procedures
+
+We randomized the experiment using “set.seed(317)” in R and applied those randomized numbers to our data table. We then created an assembly line creating paper helicopters of varying materials and wing lengths in the random order dictated by our number generator. One person measured and drew cut lines then passed the helicopter to another team member who cut the paper, folded it where necessary, and attached a paperclip to the bottom. Once the helicopter was made, another team member would hold it up to the height of the door frame (7 feet) and drop it while the fourth member of our team recorded drop time using a stopwatch. This approach ensured consistency of folding and cutting styles as well as drop and timing techniques in an attempt to reduce the effect of hidden variables. This process was repeated for six replicates of each of the six helicopter combinations (printer paper: 3 inch, cardstock: 3 inch, printer paper: 4 inch, cardstock: 4 inch, printer paper: 5 inch, cardstock: 5 inch) for a total of 36 helicopter drops. All time measurements were recorded in real time as the experiment was taking place.
+
+# Data Analysis and Insights
+
+# Conclusions
+
+# Appendix
