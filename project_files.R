@@ -40,6 +40,15 @@ copter = read_csv(file="Experiment,Run,Length,Paper,Response
 9,36,3 inches,Cardstock,1.25
 ")
 
+#power analysis
+power.anova.test(
+  groups = 6,          
+  n = 6,               
+  between.var = 0.16,  
+  within.var = 1.0,    
+  sig.level = 0.05
+)
+
 glimpse(copter)
 #assigning factors
 copter = copter |>
@@ -88,6 +97,12 @@ interaction.plot(x.factor = copter$Length,
 
 #pairwise comparisons
 TukeyHSD(model)
+
+#Means and Standard Deviations
+means <- copter |> 
+        group_by(Paper, Length) |> 
+        summarize(mean = mean(Response), sd = sd(Response), n = n())
+means
 
 
 
