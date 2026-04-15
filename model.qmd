@@ -1,0 +1,44 @@
+---
+title: "Final Project"
+Team: Weston Hansen, Gabriel Mendenhall, Calvin Habel, Brayden Kellerby
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+## Design and Data Collection
+
+We used a BF(2) design for a Randomized Two-Factor experiment to test the efficacy of paper helicopters. The response variable was Drop Time (in seconds), the factors were Paper Type (Printer Paper, Cardstock) and Wing Length (3 inches, 4 inches, 5 inches), and the experimental unit was one paper helicopter flight. 
+
+The ANOVA model used is $$y_{ijk}=\mu + \alpha_i + \beta_j + (\alpha\beta)_{ij}+\epsilon_{ijk}$$ where $y_{ijk}$ is the Drop Time (in seconds) for the ith Paper Type with the jth Wing Length in the kth paper helicopter flight,\
+$\mu$ is the grand mean across all helicopter treatments and flights,\
+$\alpha_i$ is the treatment effect for Paper Type i,\
+$\beta_j$ is the treatment effect for Wing Length j,\
+$(\alpha\beta)_{ij}$ is the interaction effect between Paper Type i and Wing Length j,\
+$\epsilon_{ijk}$ represents the random error in flight k of Paper Type i at Wing Length j,\
+$i=1, 2$ indexes Paper Type (Printer Paper, Carstock) ,\
+$j=1, 2, 3$ indexes Wing Length (3 inches, 4 inches, 5 inches), and\
+$k=1, \ldots, n_{ij}$ indexes replicates of flights for Paper Type i at Wing Length j,\
+where $n_{ij}$= 6 replicates for all $i$ and $j$.
+
+Where
