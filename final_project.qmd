@@ -7,26 +7,6 @@ editor: visual
 
 # Introduction
 
-While paper airplanes may be the most popular handmade aircraft, they’re not the only option. For our project, we decided to look at paper helicopters. These helicopters are arguably simpler to construct than a paper airplane. Cutting two wings or blades from the top of the sheet of paper, cutting and folding in the outside two-thirds of the bottom, and then securing the bottom with a paperclip (for even weight distribution, and to fasten the bottom edges) gives you a simple flight vehicle that is meant to suspend in the air longer than a normal sheet of paper. The paper helicopter drop is a well-known experimental model used frequently to introduce engineering and statistics concepts. In fact, in 2005, there was a scholarly article written that makes the case that Paper Helicopters hold the key to introducing several different career fields to Engineering and Statistics. According to David Annis, ‘From the instructor’s perspective, the paper helicopter experiment, as presented, offers a jumping-off point for a number of discussions. First, it provides a concrete illustration of how subject-specific knowledge can be brought to bear on the problem at hand. Second, while the factorial method is often an excellent tool for variable screening in the absence of physical knowledge, when such knowledge exists, it should be incorporated as much as possible in the experimental design and analysis.’ The second point resonates with the idea that although not all phenomena can be understood by every audience, there is merit in using the physical evidence to come to a statistical conclusion. 
-
-	When conducting our experiment with these paper helicopters, we dropped them from a height of seven feet and two inches, timing the flight time of the helicopters with a stopwatch from the time they left the researcher’s hand to the time the paper helicopter touched the floor. We had two major factors that were considered, the wing length and the type of paper. We used wing lengths of three, four, and five inches, with cardstock and printer paper. We had six different treatment groups in our Basic 2-Factor design, and had six replicates in each treatment group, for a total of 36 replicates. We created a new helicopter each time and had a random run order to maximize randomization. Our hypotheses were as follows: the type of paper used in crafting the helicopter has an effect on the flight time of the helicopter; the length of the wings created when crafting the helicopter has an effect on the flight time of the helicopter; and the interaction and pairing of the length of wings and type of paper has an effect on the flight time of the helicopter.
-
-More specifically, we believed that longer helicopter wings would result in longer flight time than shorter ones, and that cardstock helicopters would have longer flight times than printer paper helicopters.
-
-**Experiment Photos**
-
-![](images/IMG_20260415_191835.heic)
-
-![](images/IMG_20260415_191837-01.heic)
-
-![](images/IMG_20260415_191843.heic)
-
-![](images/IMG_20260415_191847.heic)
-
-![](images/IMG_20260415_191851.heic)
-
-![](images/IMG_20260415_191855.heic)
-
 # Design and Data Collection
 
 We used a BF(2) design for a Randomized Two-Factor experiment to test the efficacy of paper helicopters. The response variable was Drop Time (in seconds), the factors were Paper Type (Printer Paper, Cardstock) and Wing Length (3 inches, 4 inches, 5 inches), and the experimental unit was one paper helicopter flight. 
@@ -77,104 +57,6 @@ We randomized the experiment using “set.seed(317)” in R and applied those ra
 
 # Data Analysis and Insights
 
-When analyzing the data we collected, there were several assumptions that we needed to meet. These included Constant Variance, Normality, a Zero Mean of Residuals, and Independence. When checking for constant variance, we looked at the ratio of standard deviations of the treatment with the highest standard deviations over the treatment with the lowest standard deviations. The ratio was 2.396. Generally, we look for a ratio that is less than 3 to validate the Equal Variance assumption. Thus, our ratio of 2.396 does meet the Equal Variance assumption. When checking for a mean of zero, we are looking to show whether our experimental model has any bias. The mean of the residuals was 1e-17, which is very close to 0. This meets our assumption for an unbiased model. When checking for a normal distribution, we usually use a QQ Plot and look for any points that don’t follow the line for a normal distribution. We generally look at the edges of the line to see any anomalies. After analyzing the QQ Plot, we see that the edges of the line do have some data points near it. When looking at similarly normal generated data for 36 replicates, it looked relatively similar. Therefore, the model likely does meet the Normality assumption. The last assumption that we checked was for Independence. We plotted the residual values, looking for even and random distribution around 0. Upon visual inspection, the distribution does tend to be around 0, however, there is not a random distribution. The plot seemed to indicate two separate groups of residuals, one from Index 0-20, and the other from Index 20-36. This does not meet our Independence assumption, and speaks to the invalidity of the model.
-
-One of the biggest reasons that may have caused the independence assumption to go unmet is the sample size. We had a very low sample size that was not adequate for our model. Additionally, we did our experiment at two different times of day. Although we used the same height, and paper, controlling for most other variables, doing it in more than one session could change the values slightly, due to ventilation in the room, researchers being more tired and thus hitting the stopwatch later, etc. A potential reason that our Variance was not constant could have been tied to the way that the Helicopters were dropped. There was about a 25% chance that when we would drop the helicopters, they would turn parallel to the ground, which caused them to not fly in the intended method. This could have been fixed by dropping it from a greater height, or by reinforcing the wings somehow. ANOVA as a test is extremely unreliable when the assumptions aren’t met, and though other tests would help to meet these assumptions, we are not performing them here. Thus, with only three of the four assumptions met, we cannot say that this model is valid.
-
-The treatment effects in the model overall did not have a significant effect on the response. Our p value for Length of Paper was 0.643 which is above the threshold of 0.05, which would indicate a significant effect on the response. Our p value for Type of Paper was 0.173, which is a higher effect than the Length, but not nearly close enough to be significant. Our p value for the Interaction effect of Type and Length of paper was almost significant, at 0.09. This is still not small enough for it to be considered a significant effect on the response variable. Therefore, as emphasized earlier, our treatments (being the type of paper and the length of the wings) did not have a significant effect on the time the helicopters were flying. 
-
-Based on the Interaction Plot that was included, there seems to be little to no difference on the Paper type when the Helicopter wings were five inches. However, the mean flight time was as much as .5 seconds off between the paper types when the Helicopters were 4 inches, and as much as .3 seconds off when 3 inch wings were used. This indicates that there might be an interaction effect for some wings, but it wasn’t enough to be able to justify and confidently say that the Interaction of the paper type and wing length caused a significant difference in flight time. Taking a log transformation would not be very helpful to find a model that may imply a difference, because our only assumption that was not met is Independence. Further, when applying a log transformation to purely the residual graph, Independence is still not met. Therefore, we can unconfidently say that there were no significant interaction or treatment effects in our experiment.
-
 # Conclusions
 
-Based on the data collected, we found no statistically significant evidence that first, Wing length affects flight time, second, type of paper affects flight time, and third, the interaction of those two factors affects flight time. This conclusion indicates that despite whether you use cardstock or printer paper, or wing lengths of three, four, or five inches, you will not notice any significant or measurable difference between the times calculated. Our data was collected based on a randomized order which we developed. We organized the 36 experiments by factors initially and assigned them a number 1-36. We then used a random number generator in R to randomize the run order of our 36 trials, mitigating potential human bias or fatigue. We then assigned experiments 1-36 a randomization number to cut out bias and perhaps fatigue. We did not randomize the paper though, and cannot say that any type of cardstock or printer paper has the same difference (or no difference, in this case) on flight time Our research, which maintained standard tail lengths, kept standard paper clip weight, and timed the results in the same manner, could perhaps have discrepancies. One flaw could be drop height: our results were mostly within 1-3 seconds of flight time. This brief moment from drop to touchdown could easily have greater than .5 seconds of human error. There could also have been inconsistencies in timing between the researcher with the stopwatch saying “go” and the person letting go of the helicopter to let it fly. If we were to conduct this experiment again we would find an indoor location to drop the helicopter from with greater height to drop from. The longer length of time can more easily buffer human errors on recording times and lead to more solid results. We could also record each drop to precisely measure the starting point and touchdown point, minimizing human error.
-
 # Appendix
-
-Reference:
-
-Annis, D. H. (2005). Rethinking the Paper Helicopter: Combining Statistical and Engineering Knowledge. The American Statistician, 59(4), 320–326. https://doi.org/10.1198/000313005X70777
-
-### **1. Introduction**
-
-**What works well:**
-
--   You seamlessly integrated the relevant literature (the David Annis quote) to establish the academic relevance of the paper helicopter experiment.
-
--   Your hypotheses are clearly stated in bullet points at the end, making them very easy to find.
-
--   The word count (\~320 words) perfectly aligns with the \~250-word expectation.
-
-**Areas for improvement:**
-
--   **The Research Question:** The rubric explicitly asks for the research question to be stated in non-technical terms. While your hypotheses imply the question, you should explicitly state it early on. Suggestion: Add a clear sentence like, "The primary research question of this study is: How do the type of paper and the length of the wings affect the flight time of a paper helicopter?"
-
--   **Flow:** The transition sentence, "This is a famous statistical experiment that is actually generally taught to engineers to explain statistics to them," is a bit clunky. Consider revising for a smoother flow: "The paper helicopter drop is a well-known experimental model used frequently to introduce engineering and statistics concepts."
-
-### **2. Design & Data Collection**
-
-**What works well:**
-
--   Excellent job explicitly defining the design (Randomized Two-Factor), response variable, experimental units, and factors.
-
--   Your statistical ANOVA model is beautifully written out with all terms defined clearly.
-
--   The data collection and randomization procedures are extremely detailed and easily reproducible.
-
-**Areas for improvement:**
-
--   **LaTeX/Math Notation:** In your hypotheses, you wrote \$(\\alpha\\beta)\_{ij\^2}\$. The square should apply to the whole term, not just the index \$j\$. It should be written as \$\\sum \\sum (\\alpha\\beta)\_{ij}\^2 = 0\$. Apply this same fix to your \$\\alpha\$ and \$\\beta\$ terms (e.g., \$\\sum \\alpha_i\^2 = 0\$).
-
--   **Missing Components:** \* **Power Analysis:** This is completely missing. The rubric requires a "power analysis to justify sample size, with justification of assumptions used to calculate power." You mention later in the essay that your sample size (\$n=36\$) was too low, but you need to explain why you chose 36 in the first place using a power calculation (or explain what power 36 replicates gives you).
-
-    -   **Visuals:** Don't forget to include the required photo of all group members collecting data, as well as any diagrams of the helicopter setup if you have them.
-
-### **3. Data Analysis**
-
-**What works well:**
-
--   You systematically go through the ANOVA assumptions (Constant Variance, Normality, Zero Mean, Independence) and provide your rationale for each based on the data.
-
--   You interpret the p-values well and clearly state that there is no significant effect.
-
-**Areas for improvement & Statistical Candor:**
-
--   **The Independence Assumption:** You noted a time-of-day split that caused your residuals to cluster into two groups, violating independence. However, you concluded with, "Fortunately, three out of four assumptions are met, and our ANOVA model can be considered relatively reliable." **You should revise this.** ANOVA is highly sensitive to violations of independence. If independence is violated, the standard errors are incorrect, and the model is technically not reliable. It's much better to own this limitation directly! You could suggest that "time of day" should have been treated as a blocking factor.
-
--   **Zero Mean of Residuals:** You mentioned that the mean of the residuals was 1e-17. Mathematically, ordinary least squares and ANOVA will always force the mean of the residuals to be exactly zero. This isn't really an assumption you need to test; it's a mathematical guarantee of the model.
-
--   **Missing Components:**
-
-    -   **The ANOVA Table:** The rubric asks for a "well-formatted and appropriately constructed ANOVA table." You mention p-values, but the table itself is missing from the text.
-
-    -   **Pairwise Comparisons:** Because you have a factor with 3 levels (Wing Length), the rubric asks for pairwise comparisons (like Tukey). Because your main effects were not significant, you don't actually need to run a Tukey test, but you should explicitly tell the grader why you aren't doing it (e.g., "Because the main effect of Wing Length was not statistically significant, pairwise comparisons such as Tukey's HSD were not performed.").
-
-    -   **Well-Labeled Plot:** You mention an Interaction Plot in the text, so just ensure the actual figure is inserted, captioned, and referenced properly before submitting.
-
-### **4. Conclusions**
-
-**What works well:**
-
--   You clearly summarize the major findings right at the start.
-
--   Your breakdown of the experiment's limitations (human error in timing, drop height) is excellent and highly logical. Your proposed improvements directly address these flaws.
-
-**Areas for improvement:**
-
--   **Generalizability (Missing Component):** The rubric specifically asks you to address whether experimental units were randomly sampled and how this affects generalizability. You need a sentence or two discussing this. Did you randomly sample the paper from a larger population of all paper? No. Therefore, can you generalize these findings to all cardstock and printer paper in the world, or just the specific brands/types you used? Address this explicitly to secure those points.
-
-### **Summary of Action Items Before Submission:**
-
-1.  Add a direct, non-technical Research Question to the Introduction.
-
-2.  Fix the exponent placement in your Null/Alternative Hypotheses math.
-
-3.  **Add a paragraph detailing your Power Analysis in the Design section.**
-
-4.  Insert the ANOVA table and the Interaction Plot into the Data Analysis section.
-
-5.  Add a brief note explaining why Tukey (pairwise) tests were skipped.
-
-6.  Soften your claim that the model is "reliable" despite failing the independence assumption.
-
-7.  Add a brief discussion on generalizability to the Conclusion.\
