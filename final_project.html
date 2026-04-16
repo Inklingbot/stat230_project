@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Final Project</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="final_project_files/libs/clipboard/clipboard.min.js"></script>
+<script src="final_project_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="final_project_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="final_project_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="final_project_files/libs/quarto-html/popper.min.js"></script>
+<script src="final_project_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="final_project_files/libs/quarto-html/anchor.min.js"></script>
+<link href="final_project_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="final_project_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="final_project_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="final_project_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="final_project_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Final Project</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>While paper airplanes may be the most popular handmade aircraft, they’re not the only option. For our project, we decided to look at paper helicopters. These helicopters are arguably simpler to construct than a paper airplane. Cutting two wings or blades from the top of the sheet of paper, cutting and folding in the outside two-thirds of the bottom, and then securing the bottom with a paperclip (for even weight distribution, and to fasten the bottom edges) gives you a simple flight vehicle that is meant to suspend in the air longer than a normal sheet of paper. The paper helicopter drop is a well-known experimental model used frequently to introduce engineering and statistics concepts. In fact, in 2005, there was a scholarly article written that makes the case that Paper Helicopters hold the key to introducing several different career fields to Engineering and Statistics. According to David Annis, ‘From the instructor’s perspective, the paper helicopter experiment, as presented, offers a jumping-off point for a number of discussions. First, it provides a concrete illustration of how subject-specific knowledge can be brought to bear on the problem at hand. Second, while the factorial method is often an excellent tool for variable screening in the absence of physical knowledge, when such knowledge exists, it should be incorporated as much as possible in the experimental design and analysis.’ The second point resonates with the idea that although not all phenomena can be understood by every audience, there is merit in using the physical evidence to come to a statistical conclusion.&nbsp;</p>
+<pre><code>When conducting our experiment with these paper helicopters, we dropped them from a height of seven feet and two inches, timing the flight time of the helicopters with a stopwatch from the time they left the researcher’s hand to the time the paper helicopter touched the floor. We had two major factors that were considered, the wing length and the type of paper. We used wing lengths of three, four, and five inches, with cardstock and printer paper. We had six different treatment groups in our Basic 2-Factor design, and had six replicates in each treatment group, for a total of 36 replicates. We created a new helicopter each time and had a random run order to maximize randomization. Our hypotheses were as follows: the type of paper used in crafting the helicopter has an effect on the flight time of the helicopter; the length of the wings created when crafting the helicopter has an effect on the flight time of the helicopter; and the interaction and pairing of the length of wings and type of paper has an effect on the flight time of the helicopter.</code></pre>
+<p>More specifically, we believed that longer helicopter wings would result in longer flight time than shorter ones, and that cardstock helicopters would have longer flight times than printer paper helicopters.</p>
+<p><strong>Experiment Photos</strong></p>
+<p><img src="images/IMG_20260415_191835.heic" class="img-fluid"></p>
+<p><img src="images/IMG_20260415_191837-01.heic" class="img-fluid"></p>
+<p><img src="images/IMG_20260415_191843.heic" class="img-fluid"></p>
+<p><img src="images/IMG_20260415_191847.heic" class="img-fluid"></p>
+<p><img src="images/IMG_20260415_191851.heic" class="img-fluid"></p>
+<p><img src="images/IMG_20260415_191855.heic" class="img-fluid"></p>
+</section>
+<section id="design-and-data-collection" class="level1">
+<h1>Design and Data Collection</h1>
+<p>We used a BF(2) design for a Randomized Two-Factor experiment to test the efficacy of paper helicopters. The response variable was Drop Time (in seconds), the factors were Paper Type (Printer Paper, Cardstock) and Wing Length (3 inches, 4 inches, 5 inches), and the experimental unit was one paper helicopter flight.&nbsp;</p>
+<section id="the-anova-model-used" class="level3">
+<h3 class="anchored" data-anchor-id="the-anova-model-used">The ANOVA Model Used</h3>
+<p><span class="math display">\[y_{ijk}=\mu + \alpha_i + \beta_j + (\alpha\beta)_{ij}+\epsilon_{ijk}\]</span> where <span class="math inline">\(y_{ijk}\)</span> is the Drop Time (in seconds) for the ith Paper Type with the jth Wing Length in the kth paper helicopter flight,<br>
+<span class="math inline">\(\mu\)</span> is the grand mean across all helicopter treatments and flights,<br>
+<span class="math inline">\(\alpha_i\)</span> is the treatment effect for Paper Type i,<br>
+<span class="math inline">\(\beta_j\)</span> is the treatment effect for Wing Length j,<br>
+<span class="math inline">\((\alpha\beta)_{ij}\)</span> is the interaction effect between Paper Type i and Wing Length j,<br>
+<span class="math inline">\(\epsilon_{ijk}\)</span> represents the random error in flight k of Paper Type i at Wing Length j,<br>
+<span class="math inline">\(i=1, 2\)</span> indexes Paper Type (Printer Paper, Carstock) ,<br>
+<span class="math inline">\(j=1, 2, 3\)</span> indexes Wing Length (3 inches, 4 inches, 5 inches), and<br>
+<span class="math inline">\(k=1, \ldots, n_{ij}\)</span> indexes replicates of flights for Paper Type i at Wing Length j,<br>
+where <span class="math inline">\(n_{ij}\)</span>= 6 replicates for all <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span>.</p>
+</section>
+<section id="hypotheses-for-interaction" class="level3">
+<h3 class="anchored" data-anchor-id="hypotheses-for-interaction">Hypotheses for Interaction</h3>
+<ul>
+<li><span class="math inline">\(H_0:\)</span> no interaction between Paper Type and Wing Length on Drop Time</li>
+<li><span class="math inline">\(H_a:\)</span> interaction between Paper Type and Wing Length on Drop Time</li>
+</ul>
+<p>Ho = <span class="math inline">\(\sum\)</span><span class="math inline">\(\sum\)</span><span class="math inline">\((\alpha\beta)_{ij^2}\)</span> = 0</p>
+<p>Ha = <span class="math inline">\(\sum\)</span><span class="math inline">\(\sum\)</span><span class="math inline">\((\alpha\beta)_{ij^2}\)</span> <span class="math inline">\(≠\)</span> 0</p>
+</section>
+<section id="hypotheses-for-paper-type" class="level3">
+<h3 class="anchored" data-anchor-id="hypotheses-for-paper-type">Hypotheses for Paper Type</h3>
+<ul>
+<li><span class="math inline">\(H_0:\)</span> no effect of Paper Type on Drop Time (in seconds)</li>
+<li><span class="math inline">\(H_a:\)</span> Paper Type has an effect on Drop Time</li>
+</ul>
+<p>Ho = <span class="math inline">\(\sum\)</span><span class="math inline">\(\alpha_i^2\)</span> = 0</p>
+<p>Ha = <span class="math inline">\(\sum\)</span><span class="math inline">\(\alpha_i^2\)</span> <span class="math inline">\(≠\)</span> 0</p>
+</section>
+<section id="hypotheses-for-wing-length" class="level3">
+<h3 class="anchored" data-anchor-id="hypotheses-for-wing-length">Hypotheses for Wing Length</h3>
+<ul>
+<li><span class="math inline">\(H_0:\)</span> no effect of Wing Length on Drop Time</li>
+<li><span class="math inline">\(H_a:\)</span> Wing Length has an effect on Drop Time.</li>
+</ul>
+<p>Ho = <span class="math inline">\(\sum\)</span><span class="math inline">\(\beta_j^2\)</span> = 0</p>
+<p>Ha = <span class="math inline">\(\sum\)</span><span class="math inline">\(\beta_j^2\)</span> <span class="math inline">\(≠\)</span> 0</p>
+</section>
+<section id="data-collection-procedures" class="level3">
+<h3 class="anchored" data-anchor-id="data-collection-procedures">Data Collection Procedures</h3>
+<p>We randomized the experiment using “set.seed(317)” in R and applied those randomized numbers to our data table. We then created an assembly line creating paper helicopters of varying materials and wing lengths in the random order dictated by our number generator. One person measured and drew cut lines then passed the helicopter to another team member who cut the paper, folded it where necessary, and attached a paperclip to the bottom. Once the helicopter was made, another team member would hold it up to the height of the door frame (7 feet) and drop it while the fourth member of our team recorded drop time using a stopwatch. This approach ensured consistency of folding and cutting styles as well as drop and timing techniques in an attempt to reduce the effect of hidden variables. This process was repeated for six replicates of each of the six helicopter combinations (printer paper: 3 inch, cardstock: 3 inch, printer paper: 4 inch, cardstock: 4 inch, printer paper: 5 inch, cardstock: 5 inch) for a total of 36 helicopter drops. All time measurements were recorded in real time as the experiment was taking place.</p>
+</section>
+</section>
+<section id="data-analysis-and-insights" class="level1">
+<h1>Data Analysis and Insights</h1>
+<p>When analyzing the data we collected, there were several assumptions that we needed to meet. These included Constant Variance, Normality, a Zero Mean of Residuals, and Independence. When checking for constant variance, we looked at the ratio of standard deviations of the treatment with the highest standard deviations over the treatment with the lowest standard deviations. The ratio was 2.396. Generally, we look for a ratio that is less than 3 to validate the Equal Variance assumption. Thus, our ratio of 2.396 does meet the Equal Variance assumption. When checking for a mean of zero, we are looking to show whether our experimental model has any bias. The mean of the residuals was 1e-17, which is very close to 0. This meets our assumption for an unbiased model. When checking for a normal distribution, we usually use a QQ Plot and look for any points that don’t follow the line for a normal distribution. We generally look at the edges of the line to see any anomalies. After analyzing the QQ Plot, we see that the edges of the line do have some data points near it. When looking at similarly normal generated data for 36 replicates, it looked relatively similar. Therefore, the model likely does meet the Normality assumption. The last assumption that we checked was for Independence. We plotted the residual values, looking for even and random distribution around 0. Upon visual inspection, the distribution does tend to be around 0, however, there is not a random distribution. The plot seemed to indicate two separate groups of residuals, one from Index 0-20, and the other from Index 20-36. This does not meet our Independence assumption, and speaks to the invalidity of the model.</p>
+<p>One of the biggest reasons that may have caused the independence assumption to go unmet is the sample size. We had a very low sample size that was not adequate for our model. Additionally, we did our experiment at two different times of day. Although we used the same height, and paper, controlling for most other variables, doing it in more than one session could change the values slightly, due to ventilation in the room, researchers being more tired and thus hitting the stopwatch later, etc. A potential reason that our Variance was not constant could have been tied to the way that the Helicopters were dropped. There was about a 25% chance that when we would drop the helicopters, they would turn parallel to the ground, which caused them to not fly in the intended method. This could have been fixed by dropping it from a greater height, or by reinforcing the wings somehow. ANOVA as a test is extremely unreliable when the assumptions aren’t met, and though other tests would help to meet these assumptions, we are not performing them here. Thus, with only three of the four assumptions met, we cannot say that this model is valid.</p>
+<p>The treatment effects in the model overall did not have a significant effect on the response. Our p value for Length of Paper was 0.643 which is above the threshold of 0.05, which would indicate a significant effect on the response. Our p value for Type of Paper was 0.173, which is a higher effect than the Length, but not nearly close enough to be significant. Our p value for the Interaction effect of Type and Length of paper was almost significant, at 0.09. This is still not small enough for it to be considered a significant effect on the response variable. Therefore, as emphasized earlier, our treatments (being the type of paper and the length of the wings) did not have a significant effect on the time the helicopters were flying.&nbsp;</p>
+<p>Based on the Interaction Plot that was included, there seems to be little to no difference on the Paper type when the Helicopter wings were five inches. However, the mean flight time was as much as .5 seconds off between the paper types when the Helicopters were 4 inches, and as much as .3 seconds off when 3 inch wings were used. This indicates that there might be an interaction effect for some wings, but it wasn’t enough to be able to justify and confidently say that the Interaction of the paper type and wing length caused a significant difference in flight time. Taking a log transformation would not be very helpful to find a model that may imply a difference, because our only assumption that was not met is Independence. Further, when applying a log transformation to purely the residual graph, Independence is still not met. Therefore, we can unconfidently say that there were no significant interaction or treatment effects in our experiment.</p>
+</section>
+<section id="conclusions" class="level1">
+<h1>Conclusions</h1>
+<p>Based on the data collected, we found no statistically significant evidence that first, Wing length affects flight time, second, type of paper affects flight time, and third, the interaction of those two factors affects flight time. This conclusion indicates that despite whether you use cardstock or printer paper, or wing lengths of three, four, or five inches, you will not notice any significant or measurable difference between the times calculated. Our data was collected based on a randomized order which we developed. We organized the 36 experiments by factors initially and assigned them a number 1-36. We then used a random number generator in R to randomize the run order of our 36 trials, mitigating potential human bias or fatigue. We then assigned experiments 1-36 a randomization number to cut out bias and perhaps fatigue. We did not randomize the paper though, and cannot say that any type of cardstock or printer paper has the same difference (or no difference, in this case) on flight time Our research, which maintained standard tail lengths, kept standard paper clip weight, and timed the results in the same manner, could perhaps have discrepancies. One flaw could be drop height: our results were mostly within 1-3 seconds of flight time. This brief moment from drop to touchdown could easily have greater than .5 seconds of human error. There could also have been inconsistencies in timing between the researcher with the stopwatch saying “go” and the person letting go of the helicopter to let it fly. If we were to conduct this experiment again we would find an indoor location to drop the helicopter from with greater height to drop from. The longer length of time can more easily buffer human errors on recording times and lead to more solid results. We could also record each drop to precisely measure the starting point and touchdown point, minimizing human error.</p>
+</section>
+<section id="appendix" class="level1">
+<h1>Appendix</h1>
+<p>Reference:</p>
+<p>Annis, D. H. (2005). Rethinking the Paper Helicopter: Combining Statistical and Engineering Knowledge. The American Statistician, 59(4), 320–326. https://doi.org/10.1198/000313005X70777</p>
+<section id="introduction-1" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-1"><strong>1. Introduction</strong></h3>
+<p><strong>What works well:</strong></p>
+<ul>
+<li><p>You seamlessly integrated the relevant literature (the David Annis quote) to establish the academic relevance of the paper helicopter experiment.</p></li>
+<li><p>Your hypotheses are clearly stated in bullet points at the end, making them very easy to find.</p></li>
+<li><p>The word count (~320 words) perfectly aligns with the ~250-word expectation.</p></li>
+</ul>
+<p><strong>Areas for improvement:</strong></p>
+<ul>
+<li><p><strong>The Research Question:</strong> The rubric explicitly asks for the research question to be stated in non-technical terms. While your hypotheses imply the question, you should explicitly state it early on. Suggestion: Add a clear sentence like, “The primary research question of this study is: How do the type of paper and the length of the wings affect the flight time of a paper helicopter?”</p></li>
+<li><p><strong>Flow:</strong> The transition sentence, “This is a famous statistical experiment that is actually generally taught to engineers to explain statistics to them,” is a bit clunky. Consider revising for a smoother flow: “The paper helicopter drop is a well-known experimental model used frequently to introduce engineering and statistics concepts.”</p></li>
+</ul>
+</section>
+<section id="design-data-collection" class="level3">
+<h3 class="anchored" data-anchor-id="design-data-collection"><strong>2. Design &amp; Data Collection</strong></h3>
+<p><strong>What works well:</strong></p>
+<ul>
+<li><p>Excellent job explicitly defining the design (Randomized Two-Factor), response variable, experimental units, and factors.</p></li>
+<li><p>Your statistical ANOVA model is beautifully written out with all terms defined clearly.</p></li>
+<li><p>The data collection and randomization procedures are extremely detailed and easily reproducible.</p></li>
+</ul>
+<p><strong>Areas for improvement:</strong></p>
+<ul>
+<li><p><strong>LaTeX/Math Notation:</strong> In your hypotheses, you wrote $(\alpha\beta)_{ij^2}$. The square should apply to the whole term, not just the index $j$. It should be written as $\sum \sum (\alpha\beta)_{ij}^2 = 0$. Apply this same fix to your $\alpha$ and $\beta$ terms (e.g., $\sum \alpha_i^2 = 0$).</p></li>
+<li><p><strong>Missing Components:</strong> * <strong>Power Analysis:</strong> This is completely missing. The rubric requires a “power analysis to justify sample size, with justification of assumptions used to calculate power.” You mention later in the essay that your sample size ($n=36$) was too low, but you need to explain why you chose 36 in the first place using a power calculation (or explain what power 36 replicates gives you).</p>
+<ul>
+<li><strong>Visuals:</strong> Don’t forget to include the required photo of all group members collecting data, as well as any diagrams of the helicopter setup if you have them.</li>
+</ul></li>
+</ul>
+</section>
+<section id="data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis"><strong>3. Data Analysis</strong></h3>
+<p><strong>What works well:</strong></p>
+<ul>
+<li><p>You systematically go through the ANOVA assumptions (Constant Variance, Normality, Zero Mean, Independence) and provide your rationale for each based on the data.</p></li>
+<li><p>You interpret the p-values well and clearly state that there is no significant effect.</p></li>
+</ul>
+<p><strong>Areas for improvement &amp; Statistical Candor:</strong></p>
+<ul>
+<li><p><strong>The Independence Assumption:</strong> You noted a time-of-day split that caused your residuals to cluster into two groups, violating independence. However, you concluded with, “Fortunately, three out of four assumptions are met, and our ANOVA model can be considered relatively reliable.” <strong>You should revise this.</strong> ANOVA is highly sensitive to violations of independence. If independence is violated, the standard errors are incorrect, and the model is technically not reliable. It’s much better to own this limitation directly! You could suggest that “time of day” should have been treated as a blocking factor.</p></li>
+<li><p><strong>Zero Mean of Residuals:</strong> You mentioned that the mean of the residuals was 1e-17. Mathematically, ordinary least squares and ANOVA will always force the mean of the residuals to be exactly zero. This isn’t really an assumption you need to test; it’s a mathematical guarantee of the model.</p></li>
+<li><p><strong>Missing Components:</strong></p>
+<ul>
+<li><p><strong>The ANOVA Table:</strong> The rubric asks for a “well-formatted and appropriately constructed ANOVA table.” You mention p-values, but the table itself is missing from the text.</p></li>
+<li><p><strong>Pairwise Comparisons:</strong> Because you have a factor with 3 levels (Wing Length), the rubric asks for pairwise comparisons (like Tukey). Because your main effects were not significant, you don’t actually need to run a Tukey test, but you should explicitly tell the grader why you aren’t doing it (e.g., “Because the main effect of Wing Length was not statistically significant, pairwise comparisons such as Tukey’s HSD were not performed.”).</p></li>
+<li><p><strong>Well-Labeled Plot:</strong> You mention an Interaction Plot in the text, so just ensure the actual figure is inserted, captioned, and referenced properly before submitting.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="conclusions-1" class="level3">
+<h3 class="anchored" data-anchor-id="conclusions-1"><strong>4. Conclusions</strong></h3>
+<p><strong>What works well:</strong></p>
+<ul>
+<li><p>You clearly summarize the major findings right at the start.</p></li>
+<li><p>Your breakdown of the experiment’s limitations (human error in timing, drop height) is excellent and highly logical. Your proposed improvements directly address these flaws.</p></li>
+</ul>
+<p><strong>Areas for improvement:</strong></p>
+<ul>
+<li><strong>Generalizability (Missing Component):</strong> The rubric specifically asks you to address whether experimental units were randomly sampled and how this affects generalizability. You need a sentence or two discussing this. Did you randomly sample the paper from a larger population of all paper? No.&nbsp;Therefore, can you generalize these findings to all cardstock and printer paper in the world, or just the specific brands/types you used? Address this explicitly to secure those points.</li>
+</ul>
+</section>
+<section id="summary-of-action-items-before-submission" class="level3">
+<h3 class="anchored" data-anchor-id="summary-of-action-items-before-submission"><strong>Summary of Action Items Before Submission:</strong></h3>
+<ol type="1">
+<li><p>Add a direct, non-technical Research Question to the Introduction.</p></li>
+<li><p>Fix the exponent placement in your Null/Alternative Hypotheses math.</p></li>
+<li><p><strong>Add a paragraph detailing your Power Analysis in the Design section.</strong></p></li>
+<li><p>Insert the ANOVA table and the Interaction Plot into the Data Analysis section.</p></li>
+<li><p>Add a brief note explaining why Tukey (pairwise) tests were skipped.</p></li>
+<li><p>Soften your claim that the model is “reliable” despite failing the independence assumption.</p></li>
+<li><p>Add a brief discussion on generalizability to the Conclusion.<br>
+</p></li>
+</ol>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
