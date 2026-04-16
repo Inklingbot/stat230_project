@@ -49,6 +49,19 @@ power.anova.test(
   sig.level = 0.05
 )
 
+#power analysis
+library(pwr4exp)
+crd2 <- designCRD(
+ treatments = c(2,3),
+ label=list(Paper=c("Cardstock","Printer"),Length=c("3 inches", "4 inches", "5 inches")),
+ replicates = 60, #number for each trt, here 36
+ means = c(1.08,1.34,1.14,1.54,1.38,1.19), #see below
+ sigma2 = 0.1
+) 
+
+pwr.anova(crd2)
+
+
 glimpse(copter)
 #assigning factors
 copter = copter |>
@@ -69,6 +82,9 @@ abline(h=0)
 #Check normality with qq plot
 qqnorm(resids)
 qqline(resids)
+shapiro.test(resids)
+hist(resids)
+hist(log(resids))
 
 #check for constant variance
 card3 = filter(copter, Paper == 'Cardstock', Length =='3 inches')
@@ -104,6 +120,7 @@ means <- copter |>
         summarize(mean = mean(Response), sd = sd(Response), n = n())
 means
 
+mean(c(0.182, 0.201, 0.329, 0.368, 0.383, 0.436))^2
 
 
 
